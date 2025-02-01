@@ -44,7 +44,19 @@ function sortearAmigo(){
         asignarTextoElemento("#resultado",`El amigo sorteado es: ${amigoSorteado}`);
 
         nombres.splice(indiceAleatorio, 1);
-        if(nombres.length === 0){
+        mostrarNombres();
+
+        if(nombres.length === -1){
             alert("Todos los amigos fueron sorteados!");
         }
+}
+//Funcion limpiar campo de lista y poder iniciar con un nuevo sorteo
+
+function reiniciarPagina() {
+    nombres = [];
+    let lista= document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    const amigoSorteado = document.getElementById('resultado');
+    resultado.innerHTML = '';
+
 }

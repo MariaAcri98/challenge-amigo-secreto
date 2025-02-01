@@ -160,3 +160,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/*Botón de Reinicio*/
+.button-reinicio{
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+    font-size: 14px;
+}
